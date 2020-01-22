@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import './global.css';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div id="App">
+     <aside>
+        <strong>Cadastrar</strong>
+        <form>
+          <div class="input-block">
+          <label htmlFor="github_username">Usuário do github</label>
+          <input name="github_username" id="username_github" required></input>
+          </div>
+          <div class="input-block">
+          <label htmlFor="techs">Teclologias</label>
+          <input name="techs" id="techs" required></input>
+          </div>
+
+          <label htmlFor=""></label>
+          <input name="github_username" id="username_github" required></input>
+        </form>
+     </aside>
+     <main>
+
+     </main>
+   </div>
   );
 }
 
